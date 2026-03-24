@@ -1,13 +1,76 @@
+/* Yleiset */
 body {
-    background-color: #d2e2f2;
-    font-family: Roboto, sans-serif;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f3f3; /* vaalea harmaa */
+    color: #333333;
 }
 
-h1 {
-    color: #333;
-}
-
+/* Keskitys */
 .container {
-    max-width: 960px;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 70px;
 }
+
+/* Otsikot */
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+
+/* Tehtävälistan otsikko */
+.alku {
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+
+/* Tehtävälista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Linkkaus */
+a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+/* Linkkien tekstin koot */
+nav a {
+    font-size: 1.3em;
+}
+
+/* Hoveri */
+a:hover {
+    background-color: #dddddd;
+}
+
+/* linkki ei vielä toiminnassa */
+.disabled {
+    pointer-events: nome;
+    opacity: 0.4;
+    cursor: default;
+}
+
+
+
