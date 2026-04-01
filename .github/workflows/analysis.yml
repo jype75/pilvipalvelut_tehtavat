@@ -21,4 +21,14 @@ jobs:
         with:
           name: analysis-report
           path: analysis_report.txt
-          
+
+      - name: Publish report to Github Pages
+      run: | 
+        cp analysis_report.txt index.txt
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreplay.github.com"
+        git add index.txt
+        git commit -m "Update analysis report [skip ci]"  || echo "No changes to commit"
+        git push origin main
+
+        
