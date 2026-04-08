@@ -69,13 +69,13 @@ a:hover {
 
 /* linkki ei vielä toiminnassa */
 .disabled {
-    pointer-events: nome;
+    pointer-events: none;
     opacity: 0.4;
     cursor: default;
 }
 
 /* viiva alaosaan jakajaksi */
-.jakaja {
+.divider {
     border: none;
     border-top: 1px solid #ccc;
     margin: 40px 0;
